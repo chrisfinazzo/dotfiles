@@ -38,9 +38,9 @@ brew 'httrack'
 brew 'hub'
 brew 'imagemagick'
 brew 'jpeg'
-brew 'lame
+brew 'lame'
 brew 'libassuan'
-brew 'libav
+brew 'libav'
 brew 'libdvdcss'
 brew 'libebml'
 brew 'libgcrypt'
