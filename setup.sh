@@ -5,7 +5,6 @@ set -e
 function makeLinks() {
 	ln -fs ~/.bash_profile ~/Documents/Dotfiles/.bash_profile
 	ln -fs ~/.bash_prompt ~/Documents/Dotfiles/.bash_prompt
-	ln -fs ~/.emacs.d/init.el ~/Documents/Dotfiles/.emacs.d/init.el
 	ln -fs ~/.gitconfig ~/Documents/Dotfiles/.gitconfig
 	ln -fs ~/.gitignore_global ~/Documents/Dotfiles/.gitignore_global
 	
