@@ -1,0 +1,17 @@
+[user]
+    name = chrisfinazzo
+    email = chris.finazzo@gmail.com
+    signingkey = 1201DC9E114DDFBF
+[credential]
+    helper = osxkeychain
+[core]
+    editor = bbedit -w
+    excludesfile = /Users/Chris/.gitignore_global
+[diff]
+    tool = "bbdiff"
+[difftool]
+    prompt = NO
+[difftool "bbdiff"]
+    cmd = bbdiff --wait --resume "$LOCAL" "$REMOTE"
+[commit]
+    gpgsign = true
