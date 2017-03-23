@@ -7,6 +7,7 @@ tap 'vitorgalvao/tiny-scripts'
 brew 'archey'
 brew 'aspell', args: ['with-lang-en']
 brew 'autoconf'
+brew 'bash-completion'
 brew 'boost'
 brew 'cloc'
 brew 'ddrescue'

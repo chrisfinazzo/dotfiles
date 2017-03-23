@@ -2,7 +2,12 @@ export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 export EDITOR=bbedit
 
-source ~/.bash_prompt
+source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+
+source .bash_prompt
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then source $(brew --prefix)/etc/bash_completion
+fi
 
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
