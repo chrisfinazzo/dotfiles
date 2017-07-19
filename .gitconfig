@@ -13,5 +13,11 @@
     prompt = NO
 [difftool "bbdiff"]
     cmd = bbdiff --wait --resume "$LOCAL" "$REMOTE"
+[merge]
+    tool = "bbdiff"
+[mergetool]
+    prompt = NO
+[mergetool "bbdiff"]
+    cmd = bbdiff --wait --resume "$LOCAL" "$REMOTE"
 [commit]
     gpgsign = true
