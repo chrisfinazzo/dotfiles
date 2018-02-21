@@ -14,5 +14,6 @@ function makeLinks() {
 	if [[ $REPLY =~ ^[Yy]$ ]]; then
 		makeLinks
 	fi;
+}
 
 brew bundle
