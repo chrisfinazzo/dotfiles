@@ -10,7 +10,8 @@ function makeLinks() {
   ln -s ~/Documents/Dotfiles/.gitignore_global ~/.gitignore_global
 }
 
-  read -rp "This may overwrite existing files. Are you sure? (y/n) " -n 1;
+  read -rp "Did you remember to install Git first? If not, go do that now.
+This may overwrite existing files. Are you sure you want to continue? (y/n) " -n 1;
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
     makeLinks
