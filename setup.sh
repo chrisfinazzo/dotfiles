@@ -10,11 +10,16 @@ function makeLinks() {
   ln -s ~/Documents/Dotfiles/.gitignore_global ~/.gitignore_global
 }
 
-  read -rp "Did you remember to install Git first? If not, go do that now.
+read -rp "Did you remember to install Homebrew? If not, do that first (https://brew.sh).
+This may overwrite existing files. Are you sure you want to continue? (y/n) " -n 1;
+  echo "";
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    brew bundle
+  fi;
+
+read -rp "Did you remember to install Git? If not, do that now.
 This may overwrite existing files. Are you sure you want to continue? (y/n) " -n 1;
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
     makeLinks
   fi;
-
-brew bundle
