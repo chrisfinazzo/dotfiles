@@ -7,3 +7,5 @@ alias moon='curl -4 http://wttr.in/Moon'
 alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias lan='ipconfig getifaddr en0'
+
+alias npr='mpv http://www.wnyc.org/stream/wnyc-fm939/mp3.pls'
