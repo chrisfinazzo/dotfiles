@@ -9,3 +9,5 @@ alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 alias lan='ipconfig getifaddr en0'
 
 alias npr='mpv http://www.wnyc.org/stream/wnyc-fm939/mp3.pls'
+
+alias sdiff='git diff --cached --stat'
