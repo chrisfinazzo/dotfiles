@@ -11,3 +11,7 @@ alias lan='ipconfig getifaddr en0'
 alias npr='mpv http://www.wnyc.org/stream/wnyc-fm939/mp3.pls'
 
 alias sdiff='git diff --cached --stat'
+
+# Requires macOS 10.14 "Mojave"
+# 
+# alias darkmode='osascript -e 'tell app "System Events" to tell appearance preferences to set dark mode to not dark mode''
