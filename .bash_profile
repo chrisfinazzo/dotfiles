@@ -1,5 +1,9 @@
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
+# Go is weird, so it gets its own $PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 export EDITOR=bbedit
 
 source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
