@@ -16,6 +16,12 @@ read -rp "Did you remember to install Homebrew? If not, do that first (https://b
     brew bundle
   fi;
 
+read -rp "Do you want to save a copy of your Brewfile? (y/n) " -n 1;
+  echo "";
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    cd ~/Desktop && brew bundle dump
+  fi;
+
 read -rp "Did you remember to install Git? If not, do that now.
 This may overwrite existing files. Are you sure you want to continue? (y/n) " -n 1;
   echo "";
