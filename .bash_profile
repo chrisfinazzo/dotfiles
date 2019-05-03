@@ -1,7 +1,7 @@
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
 # Go is weird, so it gets its own $PATH
-export GOPATH=$HOME/go
+export GOPATH=$HOME/Documents/go
 export PATH=$PATH:$GOPATH/bin
 
 export EDITOR=bbedit
