@@ -1,6 +1,6 @@
 # My dotfiles
 
-Bash, Git, Homebrew, etc.
+Git, Homebrew, Zsh etc.
 
 ## Requirements
 
