@@ -12,9 +12,15 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-declare -U path
+autoload -Uz vcs_info
+precmd() { vcs_info }
 
-alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+zstyle ':vcs_info:git:*' formats 'on (%b) '
+
+setopt PROMPT_SUBST
+PROMPT='%n in ${PWD/$HOME/~} ${vcs_info_msg_0_}%# '
+
+declare -U path
 
 alias weather='curl -4 http://wttr.in/New_York'
 
@@ -27,11 +33,9 @@ alias lan='ipconfig getifaddr en0'
 alias npr='mpv http://www.wnyc.org/stream/wnyc-fm939/mp3.pls'
 
 alias sdiff='git diff --cached --stat'
-
-# PS1="\h:\W \u\$(__git_ps1 \" (%s) \")\$ "
-# 
+ 
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
-# 
+ 
 # Go is weird, so it gets its own $PATH
 export GOPATH=$HOME/Documents/go
 export PATH=$PATH:$GOPATH/bin
@@ -42,21 +46,12 @@ function bbshellcheck {
     shellcheck -f gcc "$@" | bbresults
 }
 
-# source $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
-# 
-# 
-# if [ -f $(brew --prefix)/etc/bash_completion ]; then
-#     source $(brew --prefix)/etc/bash_completion
-# fi
-# 
-# if which rbenv > /dev/null; then
-#     eval "$(rbenv init -)";
-# fi
-# 
-# eval "$(thefuck --alias)"
-# 
-# function http(){
-#     curl http://httpcode.info/$1;
-# }
-# 
-# complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+if which rbenv > /dev/null; then
+    eval "$(rbenv init -)";
+fi
+
+eval "$(thefuck --alias)"
+
+function http(){
+    curl http://httpcode.info/$1;
+}
