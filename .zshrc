@@ -30,8 +30,6 @@ alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias lan='ipconfig getifaddr en0'
 
-alias sdiff='git diff --cached --stat'
- 
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
  
 # Go is weird, so it gets its own $PATH
@@ -53,3 +51,15 @@ eval "$(thefuck --alias)"
 function http(){
     curl http://httpcode.info/$1;
 }
+
+# function web-project {
+#   git clone https://github.com/chrisfinazzo/start.git web-project
+#   rbenv local 2.5.4
+#   gem install bundler
+#   rbenv rehash
+#   bundle init
+#   bundle install
+#   rbenv rehash
+#   git add .
+#   git commit -m "Initial commit"
+# }
