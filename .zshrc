@@ -52,6 +52,14 @@ function http(){
     curl http://httpcode.info/$1;
 }
 
+function new() {
+    if [[ $# -eq 0 ]]; then
+        open -a "Terminal" "$PWD"
+    else
+        open -a "Terminal" "$@"
+    fi
+}
+
 # function web-project {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
 #   rbenv local 2.5.4
