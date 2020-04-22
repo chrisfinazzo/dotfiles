@@ -30,6 +30,12 @@ alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias lan='ipconfig getifaddr en0'
 
+# Restart the Touch Bar, if there is one
+alias touchbar='sudo pkill TouchBarServer'
+
+# Restart the Control Strip
+alias controlstrip='sudo killall "ControlStrip"'
+
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
  
 # Go is weird, so it gets its own $PATH
@@ -81,3 +87,4 @@ function xman() {
 #   git add .
 #   git commit -m "Initial commit"
 # }
+c
