@@ -36,6 +36,9 @@ alias touchbar='sudo pkill TouchBarServer'
 # Restart the Control Strip
 alias controlstrip='sudo killall "ControlStrip"'
 
+# Better directory sorting
+alias dir_sort='du -hd 1 . | sort -hr'
+
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
  
 # Go is weird, so it gets its own $PATH
