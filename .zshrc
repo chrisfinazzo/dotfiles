@@ -52,15 +52,15 @@ export PATH=$PATH:$GOPATH/bin
 # 
 export EDITOR=/usr/local/bin/bbedit
 
-function bbshellcheck {
-    shellcheck -f gcc "$@" | bbresults
-}
-
 if which rbenv > /dev/null; then
     eval "$(rbenv init -)";
 fi
 
 eval "$(thefuck --alias)"
+
+function bbshellcheck {
+    shellcheck -f gcc "$@" | bbresults
+}
 
 function http(){
     curl http://httpcode.info/$1;
@@ -74,16 +74,6 @@ function new() {
     fi
 }
 
-function xman() {
-    for i in "$@"; do
-        if [ $(command -v $i) ]; then
-            open x-man-page://$i
-        elif; then
-            printf "Can't find command: %s\n" "$i" >&2
-        fi
-    done
-}
-
 # function web-project {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
 #   rbenv local 2.5.4
@@ -95,3 +85,13 @@ function xman() {
 #   git add .
 #   git commit -m "Initial commit"
 # }
+
+function xman() {
+    for i in "$@"; do
+        if [ $(command -v $i) ]; then
+            open x-man-page://$i
+        elif; then
+            printf "Can't find command: %s\n" "$i" >&2
+        fi
+    done
+}
