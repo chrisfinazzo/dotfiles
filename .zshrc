@@ -36,6 +36,11 @@ alias touchbar='sudo pkill TouchBarServer'
 # Restart the Control Strip
 alias controlstrip='sudo killall "ControlStrip"'
 
+# Suffix aliases
+alias -s {txt,css,html,json,scss,sty,tex,toml,xml}=bbedit
+
+alias -s {mkv,ogg,ogm,webm}=mpv
+
 # Better directory sorting
 alias dir_sort='du -hd 1 . | sort -hr'
 
