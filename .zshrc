@@ -22,6 +22,8 @@ PROMPT='%n in [${PWD/$HOME/~}] ${vcs_info_msg_0_}%# '
 
 declare -U path
 
+unsetopt nomatch
+
 alias weather='curl -4 http://wttr.in/New_York'
 
 alias moon='curl -4 http://wttr.in/Moon'
