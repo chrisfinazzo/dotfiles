@@ -74,16 +74,6 @@ function new() {
     fi
 }
 
-# function web-project {
-#   git clone https://github.com/chrisfinazzo/start.git web-project
-#   rbenv local 2.5.4
-#   gem install bundler
-#   rbenv rehash
-#   bundle init
-#   bundle install
-#   rbenv rehash
-# }
-
 function xman() {
     for i in "$@"; do
         if [ $(command -v $i) ]; then
@@ -93,3 +83,15 @@ function xman() {
         fi
     done
 }
+
+# function web-project {
+#   git clone https://github.com/chrisfinazzo/start.git web-project
+#   rbenv local 2.5.4
+#   gem install bundler
+#   rbenv rehash
+#   bundle init
+#   bundle install
+#   rbenv rehash
+#   git add .
+#   git commit -m "Initial commit"
+# }
