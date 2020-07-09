@@ -45,11 +45,10 @@ alias -s {mkv,ogg,ogm,webm}=mpv
 
 # Better directory sorting
 alias dir_sort='du -hd 1 . | sort -hr'
- 
-# Go is weird, so it gets its own $PATH
-export GOPATH=$HOME/Documents/go
-export PATH=$PATH:$GOPATH/bin
-# 
+
+# Set the $PATH variable
+export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
+
 export EDITOR=/usr/local/bin/bbedit
 
 if which rbenv > /dev/null; then
