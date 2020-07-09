@@ -45,8 +45,6 @@ alias -s {mkv,ogg,ogm,webm}=mpv
 
 # Better directory sorting
 alias dir_sort='du -hd 1 . | sort -hr'
-
-export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
  
 # Go is weird, so it gets its own $PATH
 export GOPATH=$HOME/Documents/go
@@ -84,8 +82,6 @@ function new() {
 #   bundle init
 #   bundle install
 #   rbenv rehash
-#   git add .
-#   git commit -m "Initial commit"
 # }
 
 function xman() {
