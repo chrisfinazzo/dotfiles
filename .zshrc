@@ -4,13 +4,16 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory autocd extendedglob
 bindkey -e
-# End of lines configured by zsh-newuser-install
-# The following lines were added by compinstall
+
 zstyle :compinstall filename '/Users/Chris/.zshrc'
 
-autoload -Uz compinit
-compinit
-# End of lines added by compinstall
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
 
 autoload -Uz vcs_info
 precmd() { vcs_info }
