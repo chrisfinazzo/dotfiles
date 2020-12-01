@@ -63,6 +63,9 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)";
 fi
 
+# Node environments
+eval "$(nodenv init -)"
+
 # Fix Terminal typos
 eval "$(thefuck --alias)"
 
@@ -96,7 +99,7 @@ function xman() {
     done
 }
 
-# function web-project {
+# function jekyll-site {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
 #   rbenv local 2.5.4
 #   gem install bundler
@@ -104,6 +107,17 @@ function xman() {
 #   bundle init
 #   bundle install
 #   rbenv rehash
+#   git add .
+#   git commit -m "Initial commit"
+# }
+
+# function react-site {
+#   git clone https://github.com/chrisfinazzo/start.git web-project
+#   nodenv local system
+#   nodenv rehash
+#   npm init
+#   npm install
+#   nodenv rehash
 #   git add .
 #   git commit -m "Initial commit"
 # }
