@@ -14,6 +14,6 @@ To get started, clone this repository into the directory where you want to keep 
 
 ```sh
 % git clone https://github.com/chrisfinazzo/dotfiles.git ~/Documents/Dotfiles
-% cd ~/Documents/Dotfiles
+% ~/Documents/Dotfiles
 % ./setup.sh
 ```
