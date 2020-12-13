@@ -14,6 +14,9 @@ if type brew &>/dev/null; then
   compinit
 fi
 
+autoload -U bashcompinit
+bashcompinit
+
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
@@ -54,6 +57,10 @@ alias dir_sort='du -hd 1 . | sort -hr'
 
 # Set the $PATH variable
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
+
+# Python $PATH
+# Created by `userpath` on 2020-12-09 14:53:42
+export PATH="$PATH:/Users/Chris/.local/bin"
 
 # Set the $EDITOR variable
 export EDITOR=/usr/local/bin/bbedit

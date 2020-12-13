@@ -7,6 +7,7 @@ function makeLinks() {
   ln -s ~/Documents/Dotfiles/.gitconfig ~/.gitconfig
   ln -s ~/Documents/Dotfiles/.gitignore_global ~/.gitignore_global
   ln -s ~/Documents/Dotfiles/.hushlogin ~/.hushlogin
+  sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 }
 
 read -rp "Did you remember to install Homebrew? If not, do that first (https://brew.sh). Are you sure you want to continue? (y/n) " -n 1;
