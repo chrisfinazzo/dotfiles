@@ -72,10 +72,6 @@ fi
 # Node environments
 eval "$(nodenv init -)"
 
-# Python environments
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 # Fix Terminal typos
 eval "$(thefuck --alias)"
 
