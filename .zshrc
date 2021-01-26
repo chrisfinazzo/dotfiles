@@ -69,6 +69,9 @@ if which rbenv > /dev/null; then
     eval "$(rbenv init -)";
 fi
 
+# Pipx completions
+eval "$(register-python-argcomplete pipx)"
+
 # Node environments
 eval "$(nodenv init -)"
 
