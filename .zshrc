@@ -31,9 +31,6 @@ unsetopt nomatch
 
 # Aliases
 
-# Make sure Homebrew plays nice with pyenv
-alias brew='env PATH="${PATH//$(pyenv root)\/shims:/}" brew'
-
 # Weather
 alias weather='curl -4 http://wttr.in/New_York'
 
