@@ -10,10 +10,12 @@ function makeLinks() {
   sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 }
 
-read -rp "Did you remember to install Homebrew? If not, do that first (https://brew.sh). Are you sure you want to continue? (y/n) " -n 1;
+read -rp "Did you remember to install Homebrew? If not, do that first. Are you sure you want to continue? (y/n) " -n 1;
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
     brew bundle
+  else
+    open https://brew.sh
   fi;
 
 # `brew deps $FORMULA` shows the formula that $FOO depends on.
@@ -31,4 +33,6 @@ This may overwrite existing files. Are you sure you want to continue? (y/n) " -n
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
     makeLinks
+  else
+    brew install git
   fi;
