@@ -55,6 +55,11 @@ alias -s {txt,css,html,json,scss,sty,tex,toml,xml}=bbedit
 # Better directory sorting
 alias dir_sort='du -hd 1 . | sort -hr'
 
+# Load bc, with definitions
+alias bc='bc -lq'
+
+export BC_ENV_ARGS=$HOME/.bc
+
 # Set the $PATH variable
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
