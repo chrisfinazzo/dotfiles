@@ -57,7 +57,6 @@ alias dir_sort='du -hd 1 . | sort -hr'
 
 # Load bc, with definitions
 alias bc='bc -lq'
-
 export BC_ENV_ARGS=$HOME/.bc
 
 # Set the $PATH variable
