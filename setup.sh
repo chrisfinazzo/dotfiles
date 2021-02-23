@@ -7,6 +7,7 @@ function makeLinks() {
   ln -s ~/Documents/Dotfiles/.gitconfig ~/.gitconfig
   ln -s ~/Documents/Dotfiles/.gitignore_global ~/.gitignore_global
   ln -s ~/Documents/Dotfiles/.hushlogin ~/.hushlogin
+  ln -s ~/Documents/Dotfiles/.bc ~/.bc
   sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 }
 
