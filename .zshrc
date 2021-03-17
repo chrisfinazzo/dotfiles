@@ -123,7 +123,7 @@ function xman() {
 
 # function react-site {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
-#   nodenv local system
+#   nodenv local 15.11.0
 #   nodenv rehash
 #   npm init
 #   npm install
