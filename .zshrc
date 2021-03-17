@@ -59,6 +59,9 @@ alias dir_sort='du -hd 1 . | sort -hr'
 alias bc='bc -lq'
 export BC_ENV_ARGS=$HOME/.bc
 
+# Source the Zsh config, automatically
+alias zshconf='bbedit -w ~/.zshrc && source ~/.zshrc'
+
 # Set the $PATH variable
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
