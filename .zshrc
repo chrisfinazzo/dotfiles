@@ -55,6 +55,9 @@ alias -s {txt,css,html,json,scss,sty,tex,toml,xml}=bbedit
 # Better directory sorting
 alias dir_sort='du -hd 1 . | sort -hr'
 
+# Load fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # Load bc, with definitions
 alias bc='bc -lq'
 export BC_ENV_ARGS=$HOME/.bc
