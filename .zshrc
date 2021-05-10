@@ -43,6 +43,9 @@ alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 # Local IP address
 alias lan='ipconfig getifaddr en0'
 
+# Reset the Dock
+alias dock='defaults delete com.apple.dock; killall Dock'
+
 # Restart the Touch Bar, if there is one
 alias touchbar='sudo pkill TouchBarServer'
 
