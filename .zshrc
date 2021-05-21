@@ -68,6 +68,9 @@ export BC_ENV_ARGS=$HOME/.bc
 # Source the Zsh config, automatically
 alias zshconf='bbedit -w ~/.zshrc && source ~/.zshrc'
 
+# Nice JSON Output -- curl https://example.com/foo.json | jsonpp
+alias jsonpp='json_pp -json_opt pretty,utf8'
+
 # Set the $PATH variable
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
@@ -130,7 +133,7 @@ function xman() {
 #   git commit -m "Initial commit"
 # }
 
-# function react-site {
+# function gatsby-site {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
 #   nodenv local 15.11.0
 #   nodenv rehash
