@@ -71,6 +71,14 @@ alias zshconf='bbedit -w ~/.zshrc && source ~/.zshrc'
 # Nice JSON Output -- curl https://example.com/foo.json | jsonpp
 alias jsonpp='json_pp -json_opt pretty,utf8'
 
+# Transmission CLI
+
+# Start the daemon
+alias td='transmission-daemon'
+
+# Transmission Remote
+alias tsm='transmission-remote'
+
 # Set the $PATH variable
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
