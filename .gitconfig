@@ -14,8 +14,6 @@
 [difftool "bbdiff"]
     cmd = bbdiff --wait --resume "$LOCAL" "$REMOTE"
     path = /usr/local/bin
-[difftool "bbdiff"]
-    path= /usr/local/bin
 [merge]
     tool = "bbdiff"
 [mergetool]
