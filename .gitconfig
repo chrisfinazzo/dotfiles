@@ -5,14 +5,16 @@
 [credential]
     helper = osxkeychain
 [core]
-    editor = bbedit -w
     excludesfile = /Users/Chris/.gitignore_global
 [diff]
-    tool = "bbdiff"
+    guitool = "bbdiff"
 [difftool]
     prompt = NO
 [difftool "bbdiff"]
     cmd = bbdiff --wait --resume "$LOCAL" "$REMOTE"
+    path = /usr/local/bin
+[difftool "bbdiff"]
+    path= /usr/local/bin
 [merge]
     tool = "bbdiff"
 [mergetool]
