@@ -5,6 +5,7 @@
 [credential]
     helper = osxkeychain
 [core]
+    editor = bbedit -w
     excludesfile = /Users/Chris/.gitignore_global
 [diff]
     guitool = "bbdiff"
