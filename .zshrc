@@ -43,6 +43,10 @@ alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 # Local IP address
 alias lan='ipconfig getifaddr en0'
 
+# User Defaults
+alias defaults-list="defaults domains | sed 's/, /\n/g'"
+alias defaults-find="defaults-list | egrep $1"
+
 # Reset the Dock
 alias dock='defaults delete com.apple.dock; killall Dock'
 
