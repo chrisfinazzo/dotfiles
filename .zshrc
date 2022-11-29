@@ -119,17 +119,6 @@ function new() {
     fi
 }
 
-# Man pages, faster
-function xman() {
-    for i in "$@"; do
-        if [ $(command -v $i) ]; then
-            open x-man-page://$i
-        elif; then
-            printf "Can't find command: %s\n" "$i" >&2
-        fi
-    done
-}
-
 # function jekyll-site {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
 #   rbenv local 2.5.4
@@ -138,17 +127,6 @@ function xman() {
 #   bundle init
 #   bundle install
 #   rbenv rehash
-#   git add .
-#   git commit -m "Initial commit"
-# }
-
-# function gatsby-site {
-#   git clone https://github.com/chrisfinazzo/start.git web-project
-#   nodenv local 15.11.0
-#   nodenv rehash
-#   npm init
-#   npm install
-#   nodenv rehash
 #   git add .
 #   git commit -m "Initial commit"
 # }
@@ -168,3 +146,4 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
