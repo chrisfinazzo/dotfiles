@@ -119,6 +119,11 @@ function new() {
     fi
 }
 
+# # View manpages in Preview - Requires macOS Ventura
+# preman() {
+#     mandoc -T pdf "$(/usr/bin/man -w $@)" | open -fa Preview
+# }
+
 # function jekyll-site {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
 #   rbenv local 2.5.4
