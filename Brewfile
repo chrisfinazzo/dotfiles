@@ -136,8 +136,6 @@ brew "libogg"
 brew "flac"
 # Library for JPEG-2000 image manipulation
 brew "openjpeg"
-# Generate introspection data for GObject libraries
-brew "gobject-introspection"
 # Vorbis General Audio Compression Codec
 brew "libvorbis"
 # VP8/VP9 video codec
@@ -146,6 +144,8 @@ brew "libvpx"
 brew "sdl2"
 # Compression/decompression library aiming for high speed
 brew "snappy"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # High-performance, high-quality MPEG-4 video library
 brew "xvid"
 # Scaling, colorspace conversion, and dithering library
@@ -186,6 +186,8 @@ brew "libusb"
 brew "gnupg"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Generate introspection data for GObject libraries
+brew "gobject-introspection"
 # Multimedia framework for research and academic purposes
 brew "gpac"
 # GNU grep, egrep and fgrep
@@ -252,8 +254,6 @@ brew "libiconv"
 brew "libmagic"
 # Extensible, open standard container format for audio/video
 brew "libmatroska"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Library for USB device access
@@ -380,7 +380,7 @@ brew "yasm"
 brew "yj"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # General-purpose lossless data-compression library
 brew "zlib"
@@ -413,8 +413,6 @@ cask "font-league-spartan"
 cask "font-sorts-mill-goudy"
 # Free and open-source media player
 cask "iina"
-# Minimal installer for conda
-cask "miniconda"
 # Keeps current IP address in sync
 cask "no-ip-duc"
 # QuickLook generator for Markdown files
