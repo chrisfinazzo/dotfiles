@@ -106,7 +106,7 @@ function bbshellcheck {
 }
 
 # HTTP Codes, in the Terminal
-function http(){
+function http() {
     curl http://httpcode.info/$1;
 }
 
