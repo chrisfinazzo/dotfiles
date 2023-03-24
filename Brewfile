@@ -6,9 +6,9 @@ tap "homebrew/cask", "https://github.com/Homebrew/homebrew-cask.git"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "kdabir/tap"
 tap "kylef/formulae"
+tap "npiv/chatblade"
 tap "sass/sass"
 tap "teamookla/speedtest"
 tap "ttscoff/thelab"
@@ -22,6 +22,10 @@ brew "imath"
 brew "libpng"
 # TIFF library and utilities
 brew "libtiff"
+# General-purpose data compression with high compression ratio
+brew "xz"
+# Zstandard is a real-time compression algorithm
+brew "zstd"
 # High dynamic-range image file format
 brew "openexr"
 # Image format providing lossless and lossy compression for web images
@@ -40,10 +44,6 @@ brew "bat"
 brew "bc"
 # C/C++ and Java libraries for Unicode and globalization
 brew "icu4c"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# Zstandard is a real-time compression algorithm
-brew "zstd"
 # Collection of portable C++ source libraries
 brew "boost"
 # Software library to render fonts
@@ -76,6 +76,8 @@ brew "cheat"
 brew "cloc"
 # Cross-platform make
 brew "cmake"
+# Suite of command-line tools for converting to and working with CSV
+brew "csvkit"
 # International domain name library (IDNA2008, Punycode and TR46)
 brew "libidn2"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -90,12 +92,8 @@ brew "dav1d"
 brew "ddrescue"
 # C implementation of Markdown
 brew "discount"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # GNU multiple precision arithmetic library
 brew "gmp"
-# Generic library support script
-brew "libtool"
 # ASN.1 structure parser library
 brew "libtasn1"
 # Low-level cryptographic library
@@ -106,6 +104,8 @@ brew "p11-kit"
 brew "unbound"
 # GNU Transport Layer Security (TLS) Library
 brew "gnutls"
+# Generic library support script
+brew "libtool"
 # C library for encoding, decoding, and manipulating JSON
 brew "jansson"
 # GNU Emacs text editor
@@ -140,12 +140,12 @@ brew "openjpeg"
 brew "libvorbis"
 # VP8/VP9 video codec
 brew "libvpx"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Low-level access to audio, keyboard, mouse, joystick, and graphics
 brew "sdl2"
 # Compression/decompression library aiming for high speed
 brew "snappy"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # High-performance, high-quality MPEG-4 video library
 brew "xvid"
 # Scaling, colorspace conversion, and dithering library
@@ -208,6 +208,14 @@ brew "hr"
 brew "html-xml-utils"
 # Uses CSS selectors to extract bits content from HTML files
 brew "htmlq"
+# Multi-platform support library with a focus on asynchronous I/O
+brew "libuv"
+# Platform built on V8 to build network applications
+brew "node"
+# Simple zero-configuration command-line HTTP server
+brew "http-server"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Website copier/offline browser
@@ -258,8 +266,6 @@ brew "libmatroska"
 brew "librsvg"
 # Library for USB device access
 brew "libusb-compat"
-# Multi-platform support library with a focus on asynchronous I/O
-brew "libuv"
 # VisualOn AAC encoder library
 brew "libvo-aacenc"
 # Text-based web browser
@@ -268,6 +274,10 @@ brew "lynx"
 brew "media-info"
 # Fast and user friendly build system
 brew "meson"
+# Like sed, awk, cut, join & sort for name-indexed data such as CSV
+brew "miller"
+# Cross-platform application and UI framework
+brew "qt"
 # Matroska media files manipulation tools
 brew "mkvtoolnix"
 # Collection of tools that nobody wrote when UNIX was young
@@ -278,8 +288,6 @@ brew "mp4v2"
 brew "mplayer"
 # Netwide Assembler (NASM) is an 80x86 assembler
 brew "nasm"
-# Platform built on V8 to build network applications
-brew "node"
 # Netlify command-line tool
 brew "netlify-cli"
 # HTTP/2 C Library
@@ -292,6 +300,8 @@ brew "nmap"
 brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# C parser in Python
+brew "pycparser"
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Adds an OCR text layer to scanned PDF files
@@ -310,6 +320,8 @@ brew "pandocomatic"
 brew "tree"
 # Password manager
 brew "pass"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # PDF converter to SVG
 brew "pdf2svg"
 # Search PDFs for strings matching a regular expression
@@ -388,12 +400,16 @@ brew "zlib"
 brew "znc"
 # UNIX shell (command interpreter)
 brew "zsh"
-# SDK
-brew "dart-lang/dart/dart"
 # checks presence of various command line tools and their versions on the path
 brew "kdabir/tap/has"
 # Swift version manager
 brew "kylef/formulae/swiftenv"
+# CLI Swiss Army Knife for ChatGPT
+brew "npiv/chatblade/chatblade"
+# Sass Migration Tool
+brew "sass/sass/migrator"
+# Stylesheet Preprocessor
+brew "sass/sass/sass"
 # Ookla Speedtest
 brew "teamookla/speedtest/speedtest"
 # Readability and Markdown utility for saving web urls and HTML text
@@ -413,6 +429,8 @@ cask "font-league-spartan"
 cask "font-sorts-mill-goudy"
 # Free and open-source media player
 cask "iina"
+# Vector graphics editor
+cask "inkscape"
 # Keeps current IP address in sync
 cask "no-ip-duc"
 # QuickLook generator for Markdown files
