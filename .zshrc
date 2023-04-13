@@ -76,7 +76,7 @@ alias zshconf='bbedit -w ~/.zshrc && source ~/.zshrc'
 alias jsonpp='json_pp -json_opt pretty,utf8'
 
 # Chatblade for ChatGPT.
-export OPENAI_API_KEY=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
+export OPENAI_API_KEY=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
 
 # Transmission CLI
 
