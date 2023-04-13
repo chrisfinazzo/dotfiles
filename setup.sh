@@ -8,6 +8,7 @@ function makeLinks() {
   ln -s ~/Documents/Dotfiles/.gitignore_global ~/.gitignore_global
   ln -s ~/Documents/Dotfiles/.hushlogin ~/.hushlogin
   ln -s ~/Documents/Dotfiles/.bc ~/.bc
+  ln -s ~/Documents/Dotfiles/.emacs.d/init.el ~/.emacs.d/init.el
   sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 }
 
