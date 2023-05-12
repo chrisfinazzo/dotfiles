@@ -8,7 +8,6 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "kdabir/tap"
 tap "kylef/formulae"
-tap "npiv/chatblade"
 tap "sass/sass"
 tap "teamookla/speedtest"
 tap "ttscoff/thelab"
@@ -20,16 +19,18 @@ brew "actionlint"
 brew "imath"
 # Library for manipulating PNG images
 brew "libpng"
-# TIFF library and utilities
-brew "libtiff"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Zstandard is a real-time compression algorithm
 brew "zstd"
+# TIFF library and utilities
+brew "libtiff"
 # High dynamic-range image file format
 brew "openexr"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
+# Apache Portable Runtime library
+brew "apr"
 # Spell checker with better logic than ispell
 brew "aspell"
 # Automatic configure script builder
@@ -70,6 +71,10 @@ brew "readline"
 brew "sqlite"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# YAML Parser
+brew "libyaml"
+# CLI Swiss Army Knife for ChatGPT
+brew "chatblade"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # Statistics utility to count lines of code
@@ -82,8 +87,6 @@ brew "csvkit"
 brew "libidn2"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-# YAML Parser
-brew "libyaml"
 # Open source multi-tool for exploring and publishing data
 brew "datasette"
 # AV1 decoder targeted to be small and fast
@@ -146,6 +149,8 @@ brew "pango"
 brew "sdl2"
 # Compression/decompression library aiming for high speed
 brew "snappy"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # High-performance, high-quality MPEG-4 video library
 brew "xvid"
 # Scaling, colorspace conversion, and dithering library
@@ -300,6 +305,8 @@ brew "nmap"
 brew "node-build"
 # Manage multiple NodeJS versions
 brew "nodenv"
+# Friendly PIL fork (Python Imaging Library)
+brew "pillow"
 # C parser in Python
 brew "pycparser"
 # Tools for and transforming and inspecting PDF files
@@ -364,6 +371,8 @@ brew "tag"
 brew "testdisk"
 # Convert TeXinfo files to HTML
 brew "texi2html"
+# Implementation of the Language Server Protocol for LaTeX
+brew "texlab"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Granddaddy of HTML tools, with support for modern standards
@@ -374,6 +383,12 @@ brew "tig"
 brew "tmux"
 # Lightweight BitTorrent client
 brew "transmission-cli"
+# Command-line tool for sharing terminal over the web
+brew "ttyd"
+# Fast Xcode unarchiver
+brew "unxip"
+# Your CLI home video recorder
+brew "vhs"
 # Internet file retriever
 brew "wget"
 # Lookup tool for domain names and other internet resources
@@ -404,8 +419,6 @@ brew "zsh"
 brew "kdabir/tap/has"
 # Swift version manager
 brew "kylef/formulae/swiftenv"
-# CLI Swiss Army Knife for ChatGPT
-brew "npiv/chatblade/chatblade"
 # Sass Migration Tool
 brew "sass/sass/migrator"
 # Stylesheet Preprocessor
