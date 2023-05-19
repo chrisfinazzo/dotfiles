@@ -333,10 +333,14 @@ brew "poppler"
 brew "pdf2svg"
 # Search PDFs for strings matching a regular expression
 brew "pdfgrep"
+# Parallel gzip
+brew "pigz"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Convert bitmaps to vector graphics
 brew "potrace"
+# Coreutils progress viewer
+brew "progress"
 # GNU Portable THreads
 brew "pth"
 # Implementation of Telnet and SSH
@@ -399,6 +403,8 @@ brew "wtf"
 brew "xmlstarlet"
 # Fast CSV toolkit written in Rust
 brew "xsv"
+# Extensible command-line tool to format YAML files
+brew "yamlfmt"
 # JavaScript package manager
 brew "yarn"
 # Modular BSD reimplementation of NASM
