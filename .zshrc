@@ -137,5 +137,3 @@ preman() {
 #   git add .
 #   git commit -m "Initial commit"
 # }
-
-if which swiftenv > /dev/null; then eval "$(swiftenv init -)"; fi
