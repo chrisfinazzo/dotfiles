@@ -57,7 +57,7 @@ alias touchbar='sudo pkill TouchBarServer'
 alias controlstrip='sudo killall "ControlStrip"'
 
 # Suffix aliases
-alias -s {txt,css,html,json,scss,sty,tex,toml,xml}=bbedit
+alias -s {txt,css,html,json,scss,toml,xml}=bbedit
 alias -s webm="open -a IINA"
 alias -s mkv="open -a IINA"
 alias -s pdf="open -a Preview.app"
