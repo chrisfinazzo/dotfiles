@@ -59,8 +59,6 @@ alias controlstrip='sudo killall "ControlStrip"'
 # Suffix aliases
 alias -s {txt,css,html,json,scss,toml,xml}=bbedit
 alias -s {mkv,webm}="open -a IINA"
-# alias -s webm="open -a IINA"
-# alias -s mkv="open -a IINA"
 alias -s pdf="open -a Preview.app"
 
 # Better directory sorting
