@@ -126,14 +126,19 @@ preman() {
     mandoc -T pdf "$(/usr/bin/man -w $@)" | open -fa Preview
 }
 
+# function 11ty-site {
+#   git clone --branch 11ty-start https://github.com/chrisfinazzo/start.git web-project
+#   nodenv local 16.0.0
+#   npm install @11ty/eleventy --save-dev
+#   nodenv rehash
+# }
+
 # function jekyll-site {
 #   git clone https://github.com/chrisfinazzo/start.git web-project
-#   rbenv local 2.5.4
+#   rbenv local 3.1.4
 #   gem install bundler
 #   rbenv rehash
 #   bundle init
 #   bundle install
 #   rbenv rehash
-#   git add .
-#   git commit -m "Initial commit"
 # }
