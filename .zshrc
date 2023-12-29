@@ -17,6 +17,8 @@ fi
 autoload -U bashcompinit
 bashcompinit
 
+eval "$(register-python-argcomplete pipx)"
+
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
@@ -142,3 +144,6 @@ preman() {
 #   bundle install
 #   rbenv rehash
 # }
+
+# Created by `pipx` on 2023-12-29 03:02:51
+export PATH="$PATH:/Users/Chris/.local/bin"
