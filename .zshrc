@@ -45,6 +45,9 @@ alias wan='dig +short myip.opendns.com @resolver1.opendns.com'
 # Local IP address
 alias lan='ipconfig getifaddr en0'
 
+# Homebrew Dependencies
+alias uses='brew uses --installed'
+
 # User Defaults
 alias defaults-list="defaults domains | sed 's/, /\n/g'"
 alias defaults-find="defaults-list | egrep $1"
