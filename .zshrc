@@ -70,7 +70,7 @@ alias -s {pdf,jpg,jpeg,png,gif}="open -a Preview"
 alias dir_sort='du -hd 1 . | sort -hr'
 
 # Load fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+eval "$(fzf --zsh)"
 
 # Load bc, with definitions
 alias bc='bc -lq'
