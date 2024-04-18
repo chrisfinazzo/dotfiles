@@ -82,6 +82,9 @@ alias zshconf='bbedit -w ~/.zshrc && source ~/.zshrc'
 # Nice JSON Output -- curl https://example.com/foo.json | jsonpp
 alias jsonpp='json_pp -json_opt pretty,utf8'
 
+# Search the stash
+alias graveyard=“git stash list --date=local”
+
 # Transmission CLI
 
 # Start the daemon
