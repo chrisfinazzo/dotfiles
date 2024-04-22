@@ -47,6 +47,7 @@ alias lan='ipconfig getifaddr en0'
 
 # Homebrew Dependencies
 alias uses='brew uses --installed'
+alias deps='brew deps --installed'
 
 # User Defaults
 alias defaults-list="defaults domains | sed 's/, /\n/g'"

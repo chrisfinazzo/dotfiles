@@ -20,10 +20,6 @@ read -rp "Did you remember to install Homebrew? If not, do that first. Are you s
     open https://brew.sh
   fi;
 
-# `brew deps $FORMULA` shows the formula that $FOO depends on.
-
-# `brew uses $FORMULA` shows all the formula that have declared $FOO as a dependency.
-
 read -rp "Do you want to save a copy of your Brewfile? (y/n) " -n 1;
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
