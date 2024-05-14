@@ -5,6 +5,7 @@ set -e
 function makeLinks() {
   ln -s ~/Documents/Dotfiles/.zshrc ~/.zshrc
   ln -s ~/Documents/Dotfiles/.curlrc ~/.curlrc
+  ln -s ~/Documents/Dotfiles/.wgetrc ~/.wgetrc
   ln -s ~/Documents/Dotfiles/.gitconfig ~/.gitconfig
   ln -s ~/Documents/Dotfiles/.gitignore_global ~/.gitignore_global
   ln -s ~/Documents/Dotfiles/.hushlogin ~/.hushlogin
