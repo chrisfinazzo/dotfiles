@@ -17,8 +17,6 @@ fi
 autoload -U bashcompinit
 bashcompinit
 
-eval "$(register-python-argcomplete pipx)"
-
 autoload -Uz vcs_info
 precmd() { vcs_info }
 
