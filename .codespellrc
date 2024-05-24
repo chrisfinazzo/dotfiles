@@ -1,0 +1,55 @@
+# This is a .codespellrc configuration file for detecting common misspellings in HTML and CSS files.
+
+# Exclude certain directories and file types if necessary.
+exclude = *.min.js,*.min.css,*.min.html,node_modules,dist,build
+
+# List of files to be included for spell checking.
+# Default is to include all files. To restrict to specific types, uncomment and modify the line below.
+# include = *.html,*.css
+
+# Enable case-sensitive matching. (1 for case-sensitive, 0 for case-insensitive)
+case-sensitive = 0
+
+# Define a list of common misspellings and their corrections.
+# Each line follows the format: misspelled_word->correct_word
+
+# HTML specific common misspellings
+teh->the
+recieve->receive
+occurence->occurrence
+occuring->occurring
+relevent->relevant
+lable->label
+atribute->attribute
+seperate->separate
+definately->definitely
+concatenate->concatenate
+lenght->length
+componant->component
+
+# CSS specific common misspellings
+backgorund->background
+boder->border
+boder-radius->border-radius
+ceter->center
+colo->color
+dispaly->display
+fload->float
+font-wieght->font-weight
+heigth->height
+lenght->length
+posistion->position
+widht->width
+vistibility->visibility
+aligment->alignment
+hieght->height
+tranform->transform
+
+# Commonly used keywords and values
+ture->true
+fase->false
+inital->initial
+repreat->repeat
+positon->position
+inhert->inherit
+calcualte->calculate
