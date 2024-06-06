@@ -69,7 +69,7 @@ alias -s {pdf,jpg,jpeg,png,gif}="open -a Preview"
 alias dir_sort='du -hd 1 . | sort -hr'
 
 # Load fzf
-eval "$(fzf --zsh)"
+source <(fzf --zsh)
 
 # Load bc, with definitions
 alias bc='bc -lq'
@@ -115,7 +115,7 @@ function bbshellcheck {
 }
 
 # HTTP Codes, in the Terminal
-function http() {
+function http(){
     curl http://httpcode.info/$1;
 }
 
