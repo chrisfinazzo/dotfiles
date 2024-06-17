@@ -18,7 +18,7 @@ function makeLinks() {
 echo "Did you remember to install Homebrew? If not, do that first. (y/n) " -n 1;
   echo "";
   if [[ $REPLY =~ ^[Yy]$ ]]; then
-    brew bundle && pipx ensurepath
+    brew bundle && pipx ensurepath && open https://github.com/standardebooks/tools?tab=readme-ov-file#macos-users
   else
     open https://brew.sh
   fi;
