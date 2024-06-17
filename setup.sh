@@ -12,7 +12,7 @@ function makeLinks() {
   ln -s ~/Documents/Dotfiles/.hushlogin ~/.hushlogin
   ln -s ~/Documents/Dotfiles/.bc ~/.bc
   ln -s ~/Documents/Dotfiles/.emacs.d/init.el ~/.emacs.d/init.el
-  sudo ln -sfn "$(brew --prefix)"/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
+  sudo ln -sfn /opt/homebrew/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
 }
 
 echo "Did you remember to install Homebrew? If not, do that first. (y/n) " -n 1;
