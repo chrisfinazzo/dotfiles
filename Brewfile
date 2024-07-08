@@ -262,6 +262,7 @@ brew "ttyd"
 brew "txt2man"
 brew "unxip"
 brew "vhs"
+brew "wcurl"
 brew "weasyprint"
 brew "wget"
 brew "whois"
@@ -306,3 +307,4 @@ mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Tailscale", id: 1475387142
+mas "United Airlines MileagePlus® Shopping", id: 6471036405
