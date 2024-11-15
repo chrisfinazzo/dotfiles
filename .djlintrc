@@ -6,6 +6,7 @@
   "format": {
     "preserve_line_breaks": true,
     "indent": "  ",
+    "indent_size": 2,
     "space_before_conditional": true,
     "line_length": 80,
     "max_preserve_newlines": 2
@@ -16,7 +17,7 @@
     "block"
   ],
     "no_inline_styles": true,
-    "self_closing": false,
+    "self_closing": true,
     "require_attribute_quotes": true,
     "no_trailing_whitespace": true,
     "no_self_closing_html": false
