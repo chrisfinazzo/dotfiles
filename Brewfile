@@ -1,7 +1,5 @@
 tap "codeclimate/formulae"
 tap "dart-lang/dart"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "kylef/formulae"
 tap "mutagen-io/mutagen"
 tap "oven-sh/bun"
