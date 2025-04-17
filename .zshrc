@@ -84,6 +84,9 @@ alias jsonpp='json_pp -json_opt pretty,utf8'
 # Search the stash
 alias graveyard=“git stash list --date=local”
 
+# Flush DNS
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
 # Transmission CLI
 
 # Start the daemon
