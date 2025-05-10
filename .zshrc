@@ -117,11 +117,6 @@ function bbshellcheck {
     shellcheck -f gcc "$@" | bbresults
 }
 
-# HTTP Codes, in the Terminal
-function http(){
-    curl http://httpcode.info/$1;
-}
-
 # New windows, faster
 function new() {
     if [[ $# -eq 0 ]]; then
