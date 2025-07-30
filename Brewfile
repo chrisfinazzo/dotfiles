@@ -1,6 +1,5 @@
 tap "codeclimate/formulae"
 tap "dart-lang/dart"
-tap "finnvoor/tools"
 tap "kylef/formulae"
 tap "mutagen-io/mutagen"
 tap "oven-sh/bun"
