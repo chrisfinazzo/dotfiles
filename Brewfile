@@ -311,6 +311,7 @@ cask "raspberry-pi-imager"
 cask "tabula"
 cask "typinator"
 cask "zoom"
+mas "Folder Quick Look", id: 6753110395
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
