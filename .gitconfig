@@ -26,3 +26,5 @@
     defaultBranch = main
 [pull]
     ff = only
+[alias]
+  recent = !git for-each-ref --sort=committerdate --format='%(committerdate:relative) %(refname:short)' refs/heads/ | tail -10
