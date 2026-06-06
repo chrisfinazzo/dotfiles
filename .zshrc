@@ -109,6 +109,9 @@ fi
 # Node environments
 eval "$(nodenv init -)"
 
+# Go environments
+eval "$(goenv init -)"
+
 # Fix Terminal typos
 eval "$(thefuck --alias)"
 
