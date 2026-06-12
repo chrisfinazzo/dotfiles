@@ -1,11 +1,11 @@
-tap "codeclimate/formulae"
-tap "dart-lang/dart"
-tap "kylef/formulae"
-tap "mutagen-io/mutagen"
-tap "oven-sh/bun"
-tap "sass/sass"
-tap "ttscoff/thelab"
-tap "yt-dlp/taps"
+tap "codeclimate/formulae", trusted: true
+tap "dart-lang/dart", trusted: true
+tap "kylef/formulae", trusted: true
+tap "mutagen-io/mutagen", trusted: true
+tap "oven-sh/bun", trusted: true
+tap "sass/sass", trusted: true
+tap "ttscoff/thelab", trusted: true
+tap "yt-dlp/taps", trusted: true
 brew "dav1d"
 brew "libvpx"
 brew "openssl@3"
@@ -203,7 +203,6 @@ brew "multimarkdown"
 brew "nasm"
 brew "nss"
 brew "poppler"
-brew "shared-mime-info"
 brew "vips"
 brew "netlify-cli"
 brew "nexttrace"
@@ -253,6 +252,7 @@ brew "ripgrep-all"
 brew "rsync"
 brew "rust"
 brew "s-search"
+brew "shared-mime-info"
 brew "shunit2"
 brew "siege"
 brew "smartmontools"

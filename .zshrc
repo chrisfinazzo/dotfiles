@@ -101,6 +101,12 @@ export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 # Set the $EDITOR variable
 export EDITOR=/usr/local/bin/bbedit
 
+# Create a Brewfile, sans descriptions
+export HOMEBREW_BUNDLE_NO_DESCRIBE=1
+
+# Use Homebrew's Sass executables instead of rbenv
+export HOMEBREW_NO_PATH_SHADOW_CHECK=1
+
 # Ruby environments
 if which rbenv > /dev/null; then
     eval "$(rbenv init -)";
