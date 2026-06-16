@@ -1,4 +1,3 @@
-tap "codeclimate/formulae", trusted: true
 tap "dart-lang/dart", trusted: true
 tap "kylef/formulae", trusted: true
 tap "mutagen-io/mutagen", trusted: true
