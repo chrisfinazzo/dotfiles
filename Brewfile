@@ -8,7 +8,7 @@ tap "yt-dlp/taps", trusted: true
 brew "dav1d"
 brew "libvpx"
 brew "openssl@3"
-brew "sdl2"
+brew "sdl2-compat"
 brew "svt-av1"
 brew "ffmpeg"
 brew "ab-av1"
