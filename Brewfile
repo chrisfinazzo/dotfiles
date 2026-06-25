@@ -1,7 +1,9 @@
+tap "codeclimate/formulae", trusted: true
 tap "dart-lang/dart", trusted: true
 tap "kylef/formulae", trusted: true
 tap "mutagen-io/mutagen", trusted: true
 tap "oven-sh/bun", trusted: true
+tap "qltysh-archive/formulae", "https://github.com/qltysh-archive/homebrew-formulae.git"
 tap "sass/sass", trusted: true
 tap "ttscoff/thelab", trusted: true
 tap "yt-dlp/taps", trusted: true
