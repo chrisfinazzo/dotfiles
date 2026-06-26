@@ -18,7 +18,7 @@ autoload -U bashcompinit
 bashcompinit
 
 autoload -Uz vcs_info
-precmd() { vcs_info }
+precmd() { vcs_info; }
 
 zstyle ':vcs_info:git:*' formats 'on (%b) '
 
@@ -49,7 +49,10 @@ alias deps='brew deps --installed'
 
 # User Defaults
 alias defaults-list="defaults domains | sed 's/, /\n/g'"
-alias defaults-find="defaults-list | egrep $1"
+
+defaults-find() {
+  defaults-list | egrep "$1"
+}
 
 # Reset the Dock
 alias dock='defaults delete com.apple.dock; killall Dock'
@@ -82,7 +85,7 @@ alias zshconf='bbedit -w ~/.zshrc && source ~/.zshrc'
 alias jsonpp='json_pp -json_opt pretty,utf8'
 
 # Search the stash
-alias graveyard=“git stash list --date=local”
+alias graveyard='git stash list --date=local'
 
 # Flush DNS
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
@@ -99,7 +102,7 @@ alias tsm='transmission-remote'
 export PATH=/usr/local/bin:/usr/local/sbin:/bin:$PATH
 
 # Set the $EDITOR variable
-export EDITOR=/usr/local/bin/bbedit
+export EDITOR='/usr/local/bin/bbedit -w'
 
 # Create a Brewfile, sans descriptions
 export HOMEBREW_BUNDLE_NO_DESCRIBE=1
