@@ -4,9 +4,10 @@ Git, Homebrew, and Zsh etc.
 
 ## Requirements
 
-The only prerequisites are a working Git installation and [Homebrew][].
+A working [Git][] installation and [Homebrew][].
 
-[Homebrew]: http://brew.sh
+[Git]: https://git-scm.com
+[Homebrew]: https://brew.sh
 
 ## Installation
 
