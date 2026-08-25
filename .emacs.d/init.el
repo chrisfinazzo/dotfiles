@@ -1,3 +1,5 @@
+;; -*- lexical-binding: t; -*-
+
 ;; Enable mouse support
 (require 'mouse)
 (xterm-mouse-mode t)
