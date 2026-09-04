@@ -313,7 +313,7 @@ brew "dart-lang/dart/dart", trusted: true
 brew "mutagen-io/mutagen/mutagen"
 brew "oven-sh/bun/bun"
 brew "sass/sass/migrator"
-brew "sass/sass/sass"
+brew "sass/sass/sass", trusted: true
 brew "ttscoff/thelab/apex"
 cask "calibre"
 cask "docker-desktop"
